@@ -1,0 +1,119 @@
+/* Загальні стилі сторінки */
+        body {
+            background-color: #000000; 
+            color: #ffffff; 
+            font-family: 'Courier New', Courier, monospace; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            margin: 0;
+            padding: 20px;
+            height: 100vh; 
+            position: relative;
+        }
+
+        /* Блок з вкладками */
+        #tabs-container {
+            width: 100%;
+            display: flex;
+            justify-content: center; 
+            gap: 10px; 
+            margin-bottom: 50px; 
+        }
+
+        .tab {
+            background-color: transparent;
+            color: #8a2be2; 
+            border: 2px solid #8a2be2; 
+            padding: 10px 20px;
+            font-size: 16px;
+            font-family: inherit; 
+            cursor: pointer;
+            text-transform: uppercase; 
+        }
+
+        .tab:hover {
+            background-color: #8a2be2;
+            color: #000000;
+        }
+
+        /* Основна зона логіну */
+        #login-zone {
+            border: 3px solid #8a2be2; 
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px; 
+            min-height: 250px; 
+            position: relative;
+        }
+
+        h1 {
+            color: #8a2be2;
+            margin-top: 0;
+            font-size: 2em;
+            letter-spacing: 2px; 
+        }
+
+        /* Кнопка LOGIN */
+        #main-login-btn {
+            background-color: #228b22; 
+            color: #000000;
+            border: 2px solid #000000;
+            padding: 20px 60px;
+            font-size: 36px; 
+            font-family: inherit;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            transition: opacity 0.2s; 
+        }
+
+        #main-login-btn:hover {
+            background-color: #32cd32; 
+        }
+
+        /* Стиль для зворотного відліку під кнопкою */
+        #cooldown-timer {
+            color: #ff0000; 
+            font-size: 18px;
+            font-weight: bold;
+            height: 20px; 
+            margin: 0;
+        }
+
+        /* Стиль для секретного віконця з посиланням */
+        #link-box {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px dashed #00bfff; /* Синя пунктирна рамка */
+            background-color: rgba(0, 191, 255, 0.1);
+            text-align: center;
+        }
+
+        #link-box a {
+            color: #00bfff;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        #link-box a:hover {
+            text-decoration: underline;
+            color: #ffffff;
+        }
+
+        /* Технічний лічильник */
+        #debug-footer {
+            position: absolute;
+            bottom: 20px;
+            color: #444444; 
+            font-size: 14px;
+        }
+        
+        #debug-footer span {
+            color: #00bfff; 
+        }
